@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="testCases.TC_004_LanguageLearning">
+        <methods>
+          <include name="teardown"/>
+          <include name="search_Language"/>
+          <include name="show_FirstCourses"/>
+          <include name="show_ThirdCourses"/>
+          <include name="show_FifthCourses"/>
+          <include name="setup"/>
+          <include name="show_SecondCourses"/>
+          <include name="show_FourthCourses"/>
+        </methods>
+      </class> <!-- testCases.TC_004_LanguageLearning -->
+      <class name="testCases.TC_002_Courses">
+        <methods>
+          <include name="teardown"/>
+          <include name="select_levels"/>
+          <include name="select_langs"/>
+          <include name="search_courses"/>
+          <include name="setup"/>
+          <include name="verify_SearchIcon"/>
+          <include name="scrollUp"/>
+        </methods>
+      </class> <!-- testCases.TC_002_Courses -->
+      <class name="testCases.TC_003_WebDevelopmentCourses">
+        <methods>
+          <include name="teardown"/>
+          <include name="course_name"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC_003_WebDevelopmentCourses -->
+      <class name="testCases.TC_001_CourseraPage">
+        <methods>
+          <include name="teardown"/>
+          <include name="Verify_CourseraPage"/>
+          <include name="setup"/>
+          <include name="check_survey_visibility"/>
+        </methods>
+      </class> <!-- testCases.TC_001_CourseraPage -->
+      <class name="testCases.TC_005_FormFilling">
+        <methods>
+          <include name="teardown"/>
+          <include name="startfillingform"/>
+          <include name="Enterprise"/>
+          <include name="form"/>
+          <include name="setup"/>
+          <include name="messageDisplay"/>
+        </methods>
+      </class> <!-- testCases.TC_005_FormFilling -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

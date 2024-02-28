@@ -30,7 +30,7 @@ public class LanguageLearning extends BasePage {
 	@FindBy(xpath="//h2[@role='heading']/div/span")
 	WebElement heading;
 	
-	@FindBy(xpath="//div[contains(@data-testid,'search-filter-group-Level')]//div[contains(@class,'css-wns57a')]//div[contains(@class,'cds-formGroup-groupWrapper')]//div[contains(@class,'css-zf4w52')]//label/div/span")
+	@FindBy(xpath="//div[contains(@data-testid,'search-filter-group-Level')]//div[contains(@class,'css-wns57a')]/div[contains(@class,'cds-formGroup-groupWrapper')]//div[contains(@class,'css-nsxeb5')]//label/div/span")
 	List<WebElement> Alllevels;
 
 
